@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const newList = document.querySelector('.new-list');
   const createList = document.querySelector('.create-list');
 
-  // const request = window.ajax({ baseUrl: 'https://todo-sinatra-app.herokuapp.com' });
-  const request = window.ajax({ baseUrl: 'http://127.0.0.1:9393' });
+  const request = window.ajax({ baseUrl: 'https://sinatra-todo-api.herokuapp.com' });
+  // const request = window.ajax({ baseUrl: 'http://127.0.0.1:9393' });
 
   const renderList = (list) => {
     const lists = document.querySelector('.lists');
