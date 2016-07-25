@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   createList.addEventListener('submit', (e) => {
     const name = document.querySelector('.list-name').value;
-    const color = document.querySelector('.list-color').value;
+    const color = document.querySelector('.list-color:checked').value;
     const params = { name: name, color: color };
 
     request.post('/lists', params).then((response) => {
