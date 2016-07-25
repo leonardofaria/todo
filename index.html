@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Todo List</title>
+	<link rel="stylesheet" type="text/css" href="devices.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<a href="https://github.com/leonardofaria/todo"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 10;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<div class="wrap">
+
+	<div class="marvel-device iphone6 silver">
+		<div class="top-bar"></div>
+		<div class="sleep"></div>
+		<div class="volume"></div>
+		<div class="camera"></div>
+		<div class="sensor"></div>
+		<div class="speaker"></div>
+		<!-- content -->
+		<div class="screen">
+
+			<header>
+				<h1>My Todo List</h1>
+				<button class="btn btn-new-list">+</button>
+			</header>
+
+			<div class="new-list" id="new-list">
+				<form class="create-list">
+					<input type="text" class="list-name" placeholder="New List">
+					<div class="colors">
+						<input id="color1" type="radio" class="list-color" name="list-color" value="54b2a1" checked /><label for="color1"></label>
+						<input id="color2" type="radio" class="list-color" name="list-color" value="95d5cf" /><label for="color2"></label>
+						<input id="color3" type="radio" class="list-color" name="list-color" value="809bbe" /><label for="color3"></label>
+						<input id="color4" type="radio" class="list-color" name="list-color" value="98d2f3" /><label for="color4"></label>
+						<input id="color5" type="radio" class="list-color" name="list-color" value="80bf86" /><label for="color5"></label>
+						<input id="color6" type="radio" class="list-color" name="list-color" value="a3d49f" /><label for="color6"></label>
+					</div>
+					<input type="submit" value="Done">
+				</form>
+			</div>
+
+			<div class="lists"></div>
+
+		</div>
+		<!-- /content -->
+		<div class="home"></div>
+		<div class="bottom-bar"></div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="ajax.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
