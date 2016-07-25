@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     div.innerHTML = content;
     div.id = `list-${list.id}`;
     div.classList.add('list');
-    // div.style = `box-shadow: 0px 6px 23px -3px #${list.color}, 0px -6px 23px -3px #${list.color}`;
     lists.appendChild(div);
 
     let listTitle = document.querySelector(`#list-title-${list.id}`);
@@ -112,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     response.map((list) => renderList(list));
   });
 
-  createList.addEventListener('click', () => {
+  createList.addEventListener('submit', (e) => {
     const name = document.querySelector('.list-name').value;
     const color = document.querySelector('.list-color').value;
     const params = { name: name, color: color };
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.alert(errors);
     });
 
-    return false;
+    e.preventDefault();
   });
 
   const deleteTask = (id) => {

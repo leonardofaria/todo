@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     div.innerHTML = content;
     div.id = 'list-' + list.id;
     div.classList.add('list');
-    // div.style = `box-shadow: 0px 6px 23px -3px #${list.color}, 0px -6px 23px -3px #${list.color}`;
     lists.appendChild(div);
 
     var listTitle = document.querySelector('#list-title-' + list.id);
@@ -113,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  createList.addEventListener('click', function () {
+  createList.addEventListener('submit', function (e) {
     var name = document.querySelector('.list-name').value;
     var color = document.querySelector('.list-color').value;
     var params = { name: name, color: color };
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
       window.alert(errors);
     });
 
-    return false;
+    e.preventDefault();
   });
 
   var deleteTask = function deleteTask(id) {

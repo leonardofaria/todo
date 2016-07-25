@@ -126,19 +126,19 @@ header {
 		top: 50px;
 	}
 
-	form {
+	.create-list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
 
-		input {
+		input[type=text] {
 			border: 0;
 			flex-grow: 1;
 			font-size: 2rem;
 			margin: 5px;
 		}
 
-		button {
+		input[type=submit] {
 			background: transparent;
 			border: 0;
 			color: blue;
